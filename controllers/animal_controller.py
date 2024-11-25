@@ -1,8 +1,22 @@
-from flask import jsonify
+from flask import jsonify, request
 from models.gato import Gato
 from models.perro import Perro
 from models.huron import Huron
 from models.boa import Boa
+
+animales = {
+    "gato": Gato,
+    "perro": Perro,
+    "huron": Huron,
+    "boa": Boa
+}
+
+def obtener_animal_por_tipo():
+    """Controlador para devolver información de un animal según el tipo."""
+    tipo = request.args.get('tipo')  # Leer parámetro 'tipo' del query string
+    if tipo in animales:
+        return jsonify(animales[tipo].obtener_sonido())
+    return jsonify({"error": "Animal no encontrado"}), 404
 
 animales = {
     "gato": Gato,

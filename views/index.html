@@ -4,15 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animales API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+            font-size: 1.2em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1.1em;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 20px;
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
     <h1>Bienvenido a la API de Animales</h1>
-    <p>Use los endpoints para consultar cómo hacen los animales:</p>
+    <p>Use los siguientes parámetros en el endpoint <strong>/animal</strong> para consultar cómo hacen los animales:</p>
     <ul>
-        <li><a href="/animal/gato">/animal/gato</a></li>
-        <li><a href="/animal/perro">/animal/perro</a></li>
-        <li><a href="/animal/huron">/animal/huron</a></li>
-        <li><a href="/animal/boa">/animal/boa</a></li>
+        <li><a href="/animal?tipo=gato">Gato</a></li>
+        <li><a href="/animal?tipo=perro">Perro</a></li>
+        <li><a href="/animal?tipo=huron">Huron</a></li>
+        <li><a href="/animal?tipo=boa">Boa</a></li>
     </ul>
+    <footer>
+        &copy; 2024 Animales API - Desarrollado por Jaime Enrique Santacruz Valcarcel
+    </footer>
 </body>
 </html>
