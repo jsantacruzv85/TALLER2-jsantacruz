@@ -1,0 +1,32 @@
+# Entornos virtuales
+.venv/
+env/
+venv/
+ENV/
+
+# Archivos de configuración del sistema
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Configuración de IDEs/editores
+.vscode/
+.idea/
+
+# Archivos de log y temporales
+*.log
+*.tmp
+*.swp
+*.bak
+*.pid
+
+# Configuración de Git
+*.DS_Store
+*.directory
+
+# Archivos generados
+*.coverage
+*.egg-info/
+build/
+dist/
